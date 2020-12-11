@@ -192,3 +192,4 @@ const getStudentRanking = (students = []) => {
     theBad
   }
 }
+  
