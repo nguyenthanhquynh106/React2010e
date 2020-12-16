@@ -160,4 +160,3 @@ const findStudentsByScore = students => {
   })
   return newArr
 }
-  
