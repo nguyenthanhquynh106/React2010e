@@ -79,28 +79,28 @@ const sortArray = array => array.sort((a, b) => a - b)
 // const data = [1, 2, 3]
 // return false
 // --------------------------------------
-const isObject = obj => {
-  if (typeof obj === 'object' && !Array.isArray(obj)) {
-    return true;
-  }
-  return false
-}
+const isObject = obj => (typeof obj === 'object' && !Array.isArray(obj))
 
 //   Bài 7
 //   Viết 1 hàm trả về các key+value (của 1 object) khác các key truyền vào Vd:
-//   const obj = { a: 1, b: 2, c: 3, d: 4 }
+const obj = { a: 1, b: 2, c: 3, d: 4 }
 //   Truyền vào a, c
 //   return { b: 2, d: 4 }
 // --------------------------------------
 const getRestObj = (object, array) => {
+  newObj = {}
   for (let key in object) {
+    newObj[key] = object[key]
+  }
+
+  for (let key in newObj) {
     array.forEach(arr => {
       if (key === arr) {
-        delete object[key]
+        delete newObj[key]
       }
     })
   }
-  return object
+  return newObj
 }
 
 // Bài 8
@@ -160,4 +160,3 @@ const findStudentsByScore = students => {
   })
   return newArr
 }
-  
