@@ -65,3 +65,4 @@ const getSelectedItem = () => {
   const text = e.options[e.selectedIndex].text
   console.log(text)
 }
+  
