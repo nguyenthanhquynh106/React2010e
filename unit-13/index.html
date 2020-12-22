@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 13</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="exercise-1">
+            <h1>Exercise 1</h1>
+            <div onmouseover="console.log('Hover lúc: ' + getDate())"
+                onmouseout="console.log('Out hover lúc: ' + getDate())">Hover me</div>
+        </div>
+
+        <div id="exercise-2">
+            <h1>Exercise 2</h1>
+            <form name="myForm">
+                Account <input type="text" onkeyup="validateAccount(event)">
+            </form>
+        </div>
+
+        <div id="exercise-3">
+            <h1>Exercise 3</h1>
+            Số tiền <input type="number" onkeyup="validateMoney(event)">
+        </div>
+
+        <div id="exercise-4">
+            <h1>Exercise 4</h1>
+            <div ondblclick="alert('double click')">Double click me</div>
+        </div>
+
+        <div id="exercise-5">
+            <h1>Exercise 5</h1>
+            <div onmouseup="getSelectedText()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                necessitatibus</div>
+        </div>
+
+        <div id="exercise-6">
+            <h1>Exercise 6</h1>
+            <select name="fruits" id="fruits" onchange="getSelectedItem()">
+                <option value="apple">apple</option>
+                <option value="orange">orange</option>
+                <option value="banana">banana</option>
+            </select>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
+    
