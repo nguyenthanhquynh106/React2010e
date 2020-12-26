@@ -118,9 +118,6 @@ const icons = {
   Settings: '<i class="fas fa-cogs"></i>'
 }
 const iconArrow = '<i class="fas fa-angle-right"></i>'
-
-
-
 const createItems = () => {
   const body = document.body
   const ul = document.createElement('ul')
@@ -171,7 +168,6 @@ const createItems = () => {
   })
 }
 createItems()
-
 const show = e => {
   e.preventDefault()
   const li = e.currentTarget
@@ -183,6 +179,3 @@ const show = e => {
   const isDisplay = ul.style.display === 'block' ? 'none' : 'block'
   ul.style.display = isDisplay
 }
-  
-
-
