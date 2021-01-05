@@ -1,0 +1,14 @@
+#edit-table {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px;
+}
+
+#btn-delete {
+  margin-left: 5px;
+}
+
+.btn-save,
+.btn-cancel {
+  display: none;
+}
